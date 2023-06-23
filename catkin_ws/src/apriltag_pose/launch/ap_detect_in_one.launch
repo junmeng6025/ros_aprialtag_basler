@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="apriltag_pose" type="node_ap_detect_in_one.py" name="ap_detect_in_one"
+        output='screen' />
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find apriltag_pose)/img_vis.rviz" />
+</launch>

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jun/ros_apriltag_basler/catkin_ws/src/apriltag_pose/apriltag_src/src/contrib/lm.h
+
+/home/jun/ros_apriltag_basler/catkin_ws/src/apriltag_pose/apriltag_src/src/contrib/lm_test.cpp
+stdio.h
+-
+lm.h
+/home/jun/ros_apriltag_basler/catkin_ws/src/apriltag_pose/apriltag_src/src/contrib/lm.h
+math.h
+-
+assert.h
+-
+stdlib.h
+-
+
