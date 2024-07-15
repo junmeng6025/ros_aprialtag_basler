@@ -86,6 +86,8 @@ Reboot the system to make the parameter change permanent.
 ```
 this message might vary due to pylon versions, but should NOT show any content about "error"  
 
+> DO `sudo ./PylonGigEConfigurator auto-all` every time you switch the connection using Ethernet port or USB adapter. This command will assign an ip address to the device.
+
 ### View the capture:
 ```bash
 cd /opt/pylon/bin
