@@ -27,7 +27,7 @@ follow these steps:
      ./pylon_setup if you want to extract into a different directory):
 ```bash
 mkdir ./pylon_setup
-tar -C ./pylon_setup -xzf ./pylon_*_setup.tar.gz
+tar -C ./pylon_setup -xzf ./pylon*_setup.tar.gz
 ```
 - 3. Change to the directory into which you extracted the setup tar.gz:
 ```bash
@@ -42,7 +42,7 @@ sudo mkdir pylon
 - 5. Extract the pylon SDK into /opt/pylon:
 ```bash
 # BAKC TO THE TERMINAL BEFORE, i.e. in the directory /pylon_setup
-sudo tar -C /opt/pylon -xzf ./pylon_*.tar.gz
+sudo tar -C /opt/pylon -xzf ./pylon*.tar.gz
 ```
 - 6. Change access rights of the pylon folder:
 ```bash
@@ -84,13 +84,17 @@ IP address already assigned to adapter "eno1". IP: 192.168.3.2, Mask: 255.255.25
 IP address already assigned to device "Basler acA1920-40gc (00:30:53:33:46:07)". IP: 192.168.3.3, Mask: 255.255.255.0 [24]. No changes required.
 Reboot the system to make the parameter change permanent.
 ```
+this message might vary due to pylon versions, but should NOT show any contant about "error"  
+
 ### View the capture:
 ```bash
 cd /opt/pylon/bin
 sudo ./pylonviewer 
 ```
 Follow the [official document](https://www.forecr.io/blogs/connectivity/pylon-installation-for-basler-camera#:~:text=Then%20the%20user%20interface%20window%20opens.%20Click%20the%20%22Basler%20acA2440%2D35um%22%20option%20under%20USB%20title.)  
-Since we connect the BASLER cam via Ethernet cable instead of USB, our cam should be under the category `GigE`
+Since we connect the BASLER cam via Ethernet cable instead of USB, our cam should be under the category `GigE`  
+
+If the pylonviewer failes to diaplay, try the python script below:
 
 ### Write a test script
 Refered to the github repo: https://github.com/basler/pypylon
