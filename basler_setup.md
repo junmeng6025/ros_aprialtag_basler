@@ -84,7 +84,7 @@ IP address already assigned to adapter "eno1". IP: 192.168.3.2, Mask: 255.255.25
 IP address already assigned to device "Basler acA1920-40gc (00:30:53:33:46:07)". IP: 192.168.3.3, Mask: 255.255.255.0 [24]. No changes required.
 Reboot the system to make the parameter change permanent.
 ```
-this message might vary due to pylon versions, but should NOT show any contant about "error"  
+this message might vary due to pylon versions, but should NOT show any content about "error"  
 
 ### View the capture:
 ```bash
