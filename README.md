@@ -30,7 +30,7 @@ Image acquisition and AprilTag detection processed in the same ROS node
 > ```bash
 > roslaunch apriltag_pose ap_detect_in_one.launch > output.log 2>&1
 > ```
-The log will be saved in folder `catkin_ws`
+> The log will be saved in folder `catkin_ws`
 
 ### Option B: Image getting and AprilTag detection separated
 ```bash
