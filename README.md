@@ -26,6 +26,12 @@ Image acquisition and AprilTag detection processed in the same ROS node
 - \+ Good synchronized visualization
 - \- Low FPS, ca. 9 fps
 
+> If you need the log saved:
+> ```bash
+> roslaunch apriltag_pose ap_detect_in_one.launch > output.log 2>&1
+> ```
+The log will be saved in folder `catkin_ws`
+
 ### Option B: Image getting and AprilTag detection separated
 ```bash
 roslaunch apriltag_pose basler_detect.launch
