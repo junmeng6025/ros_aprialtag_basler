@@ -143,3 +143,39 @@ cv2.destroyAllWindows()
 ```
 ### Run the OpenCV test
 Just connect Ethernet cable and power cable for the camera before running the .py script
+
+### Save img
+```python
+import cv2
+import keyboard
+
+# 打开摄像头（或者你可以使用cv2.imread()读取一张静态图像）
+cap = cv2.VideoCapture(0)
+
+while True:
+    # 读取摄像头的一帧
+    ret, frame = cap.read()
+
+    if not ret:
+        print("无法读取摄像头数据")
+        break
+
+    # 显示当前帧
+    cv2.imshow('Video Stream', frame)
+
+    # 检查键盘事件
+    if keyboard.is_pressed('s'):  # 如果按下 's' 键
+        cv2.imwrite('saved_image.jpg', frame)
+        print("图像已保存为 'saved_image.jpg'")
+        
+    # 按 'q' 键退出循环
+    if keyboard.is_pressed('q'):
+        print("退出程序")
+        break
+
+    # 这里可以选择其他的按键触发逻辑，取决于你的需求
+
+# 释放摄像头并关闭窗口
+cap.release()
+cv2.destroyAllWindows()
+```
